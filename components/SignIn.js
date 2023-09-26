@@ -14,22 +14,6 @@ const SignIn = () => {
     const [message, setMessage] = useState('');
     const navigation = useNavigation();
 
-
-
-    // useEffect(() => {
-    //     const unsubscribe = onAuthStateChanged(auth, (user) => {
-    //         if (user) {
-    //             const uid = user.uid;
-    //             navigation.navigate('Home')
-    //         } else {
-    //             console.log('User is signed out')
-    //         }
-    //     })
-    //     return unsubscribe
-    // }, [])
-
-
-
     const handleSignin = (async () => {
 
         const endPoint = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${apiKey}`;
